@@ -1,0 +1,7 @@
+{
+  "name": "//h1/text()",
+  "description": "/none",
+  "avatar": "//div[@class = 'category-info']//img/@src",
+  "photo_urls": "/n",
+  "media_urls": "/n"
+}

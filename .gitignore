@@ -61,4 +61,4 @@ test-reports/
 /media/
 
 /migrations/alembic/
-
+*/.pytest_cache

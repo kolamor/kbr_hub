@@ -1,0 +1,13 @@
+{
+  "name": "//h1/text() | //h4[@class = 'name']/text()",
+  "product_price": "//div[@id = 'product_price']/text()",
+  "avatar": "(//a[starts-with(@href, 'images/') and contains(@data-lightbox, 'product')])[1]/@href",
+  "photo_urls": "//a[starts-with(@href, 'images/')]/@href",
+  "brand": "//li[@class = 'trail-item']/a[text() = 'Switches']/../following-sibling::*[1]/a/text()",
+  "type": "//ul[@class = 'acc_features']//li[contains(text(), 'Linear') or contains(text(), 'Tactile') or contains(text(), 'Click')]/text()",
+  "actuation_force": "//ul[@class = 'acc_features']/li[contains(text(), 'Actuation Force:')]/text()",
+  "features": "//ul[@class = 'acc_features']//text()",
+  "parent": "//li[@class = 'trail-item']/a[text() = 'Switches']/../following-sibling::*[2]/a/text()",
+  "lubed": "//h4[@class = 'name']/text()",
+  "description": "//div[contains(@class, 'fulldesc')]//text()"
+}
