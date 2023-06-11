@@ -1,0 +1,17 @@
+# default config
+
+APP_NAME: 'kbr app'
+LOG_LEVEL: 'DEBUG'
+AUTH_SECRET_KEY: 'SECRET'
+
+# db
+
+# psql
+POSTGRESQL_DSN: 'postgres://kola:test@localhost:5432/test'
+#POSTGRESQL_DSN_OPTIONS: {}
+POSTGRESQL_DSN_OPTIONS:
+  pool_size: 2
+  max_overflow: 20
+#  pool_pre_ping: True
+
+POSTGRESQL_ENGINE_PRE: True

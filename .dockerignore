@@ -1,0 +1,12 @@
+/extra
+/.pytest_cache
+/media
+/venv
+/venv3.*
+/docs
+/README.md
+/.git
+/Dockerfile
+/.idea/
+/brute_templates
+__pycache__
