@@ -138,24 +138,3 @@ class CustomBaseItemLoader(ItemLoader):
 
 class ErrorCreate(Exception):
     pass
-
-
-# class FbcItemCls:
-#     """Класс фабрика классов items, возвращает класс одинакого _type """
-#     cls_instance = {}
-#
-#     def __new__(cls):
-#         raise ErrorCreate("Cannot be created, initialized")
-    #
-    # @classmethod
-    # def _create(cls, _type, class_name):
-    #     return type(class_name, (Item, _type), {})
-    #
-    # @classmethod
-    # def get(cls, _type, class_name):
-    #     if class_name not in cls.cls_instance:
-    #         default_item_cls = cls._create(_type, class_name)
-    #         cls.cls_instance.update({class_name: default_item_cls})
-    #     else:
-    #         default_item_cls = cls.cls_instance[class_name]
-    #     return default_item_cls
