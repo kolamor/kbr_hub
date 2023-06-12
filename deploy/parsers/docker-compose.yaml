@@ -1,0 +1,16 @@
+version: "3.9"
+
+x-service: &kbr_parser
+  working_dir: /app
+  image: kbr_parsers
+  build:
+    context: ../../
+    dockerfile: ./deploy/parsers/Dockerfile
+
+
+services:
+  mechanicalkeyboards_com_parser:
+    <<: *kbr_parser
+    environment:
+      PARSER_NAME: mechanicalkeyboards_com
+      SCRAPY_SETTINGS_MODULE: 'kbr_parsers.settings.settings_mechanicalkeyboards_com'
